@@ -1,0 +1,22 @@
+# Perpustakaan Digital (LSP)
+
+Aplikasi web perpustakaan sekolah berbasis Laravel.
+
+## Fitur
+- Login Admin & Siswa
+- CRUD Buku
+- CRUD Anggota
+- Transaksi Peminjaman & Pengembalian
+- Dashboard Admin & Siswa
+
+## Tech Stack
+- Laravel 12
+- MySQL
+- Bootstrap 5
+
+## Cara Jalankan
+- composer install
+- copy .env.example -> .env
+- php artisan key:generate
+- php artisan migrate
+- php artisan serve
