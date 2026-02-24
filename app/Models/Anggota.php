@@ -1,0 +1,26 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Anggota extends Model
+{
+    protected $table = 'anggota';
+    protected $primaryKey = 'id_anggota';
+
+    protected $fillable = [
+        'id_user',
+        'nis',
+        'nama_anggota',
+        'kelas',
+        'jurusan'
+    ];
+
+    public $timestamps = true;
+
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'id_user', 'id_user');
+    }
+}

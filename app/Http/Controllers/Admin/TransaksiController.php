@@ -1,0 +1,16 @@
+<?php
+
+namespace App\Http\Controllers\Admin;
+
+use App\Http\Controllers\Controller;
+use App\Models\Transaksi;
+use Illuminate\Http\Request;
+
+class TransaksiController extends Controller
+{
+    public function index()
+    {
+        $transaksi = Transaksi::with(['buku','anggota.user'])->get();
+        return view('admin.transaksi.index', compact('transaksi'));
+    }
+}
