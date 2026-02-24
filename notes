@@ -15,6 +15,7 @@ Aplikasi web perpustakaan sekolah berbasis Laravel.
 - Bootstrap 5
 
 ## Cara Jalankan
+- git clone https://github.com/MahawiRafid/perpustakaan-sekolah-digital
 - composer install
 - copy .env.example -> .env
 - php artisan key:generate
